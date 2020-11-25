@@ -1,0 +1,73 @@
+$bgColor:#FFFDF6;
+
+$font-size-s: 0.875rem;
+$font-size-m: 1.25rem;
+$font-size-l: 1.75rem;
+
+// util
+.d-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-size-s{ 
+  font-size: 0.875rem;
+}
+.font-size-m{ 
+  font-size: 1.25rem;
+}
+.font-size-l{ 
+  font-size: 1.75rem;
+}
+
+// basic
+*{
+  font-family: 'Noto Sans TC', sans-serif;
+}
+h1,h2,h3,h4,p,span{
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+a{
+  display: block;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+ul{
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+//index
+section{
+  height: 100vh;
+  background-color: $bgColor;
+}
+
+.listCard{
+  border: 1px solid $primary;
+  border-radius: 10px;
+  box-shadow: 5px 8px 10px rgba(0,0,0,0.35);
+  padding: 1.5rem;
+  background-color: #fff;
+  .title{
+    font-size: $font-size-l;
+    color: $primary;
+  }
+  .subtitle{
+    color: $primary;
+    &:hover{
+      color: $secondary;
+      font-weight: bold;
+    }
+  }
+}
+
+li:hover{
+  color: $secondary;
+  font-weight: bold;
+}
